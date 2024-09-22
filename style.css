@@ -1,0 +1,181 @@
+:root {
+    --fullHeight: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100%;
+}
+
+.leftPage {
+    height: 100vh;
+    width: 30vw;
+    background-image: url(greenLeaf.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftPage p, .leftPage a {
+    color: whitesmoke;
+}
+
+.leftBottomText {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.logoContainer {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100vw;
+    background-color: hsla(0, 0%, 0%, 0.555);
+}
+
+.logoBox img {
+    height: 125px;
+}
+
+.logoBox p {
+    font-family: myFirstFont;
+    font-size: 90px;
+}
+
+.rightPage {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.top, .mid, .bottom {
+    height: calc(100vh / 3); /* Each part takes exactly one-third of the screen height */
+    box-sizing: border-box;
+}
+
+.top {
+    background-color: #f1f1f1b4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-top: 70px;
+    font-size: 18px;
+}
+
+.top p {
+    font-weight: bold;
+    width: 41%;
+    line-height: 1.5;
+}
+.mid {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 50px; /* Add padding for spacing */
+    box-shadow: rgba(27, 31, 35, 0.199) 0px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.mid2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    
+    
+}
+.mid p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.mid2 form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50%;
+    gap: 5px;
+}
+
+.mid2 label {
+    width: 100%; /* Each label takes up the full width */
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.mid2 input {
+    height: 30px;
+    width: 70%; /* Each input should take up 50% of the form's width */
+    padding: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
+}
+
+.mid2 input:focus {
+    outline: 1px solid blue;
+}
+
+.mid2 input:invalid {
+    outline: 1px solid red;
+}
+
+
+.bottom {
+    background-color: #f1f1f1b4;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.bottom button {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 1px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.bottom button:hover {
+    background-color: #506141;
+    box-shadow: 0px 10px 20px rgba(6, 36, 24, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.bottom a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bottom p {
+    font-weight: 500;
+}
